@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>magistr.cspu.uz Dashboard</title>
+
+<style>
+body {
+    margin:0;
+    font-family: "Segoe UI", sans-serif;
+    background:#f4f6f9;
+}
+
+/* HEADER */
+.header {
+    height:60px;
+    background:#2f4b7c;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.header .right {
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width:240px;
+    height:100vh;
+    background:#1e3a5f;
+    color:white;
+    position:fixed;
+    top:60px;
+}
+
+.sidebar ul {
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li {
+    padding:15px 20px;
+    cursor:pointer;
+}
+
+.sidebar li:hover {
+    background:#2f4b7c;
+}
+
+/* MAIN */
+.main {
+    margin-left:240px;
+    margin-top:60px;
+    padding:20px;
+}
+
+/* CARDS */
+.cards {
+    display:flex;
+    gap:15px;
+}
+
+.card {
+    flex:1;
+    padding:20px;
+    border-radius:10px;
+    color:white;
+}
+
+.blue {background:#3b82f6;}
+.green {background:#22c55e;}
+.orange {background:#f59e0b;}
+.red {background:#ef4444;}
+
+/* CALENDAR */
+.calendar {
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.calendar table {
+    width:100%;
+    text-align:center;
+}
+
+.calendar td {
+    padding:10px;
+}
+
+.dot {
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.green-dot {background:green;}
+.yellow-dot {background:orange;}
+.red-dot {background:red;}
+
+/* RIGHT PANEL */
+.right-panel {
+    position:absolute;
+    right:20px;
+    top:120px;
+    width:250px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* CHAT */
+.chat {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:260px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.chat-header {
+    background:#2f4b7c;
+    color:white;
+    padding:10px;
+}
+
+.chat-body {
+    padding:10px;
+    height:150px;
+    overflow-y:auto;
+}
+
+.chat-input {
+    display:flex;
+}
+
+.chat-input input {
+    flex:1;
+    padding:10px;
+    border:none;
+}
+
+.chat-input button {
+    background:#3b82f6;
+    color:white;
+    border:none;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2>🎓 magistr.cspu.uz</h2>
+    <div class="right">
+        🔔
+        <img src="https://i.pravatar.cc/40" style="border-radius:50%">
+        <span>Name</span>
+    </div>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <ul>
+        <li> Dashboard</li>
+        <li> Hujjatlar</li>
+        <li> Ilmiy ish</li>
+        <li> Rahbar bilan chat</li>
+        <li> Kalendar reja</li>
+        <li> Natijalar</li>
+        <li> Sozlamalar</li>
+        <li>Davomat</li>
+    </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <!-- CARDS -->
+    <div class="cards">
+        <div class="card blue">Hujjatlar <h2>12</h2></div>
+        <div class="card green">Ilmiy ish <h2>3/5</h2></div>
+        <div class="card orange">Topshiriqlar <h2>5</h2></div>
+        <div class="card red">GPA <h2>3.8</h2></div>
+    </div>
+</div>
+
+<!-- CHAT -->
+<div class="chat">
+    <div class="chat-header">Rahbar bilan chat</div>
+    <div class="chat-body">
+        <p><b>Rahbar:</b> Salom</p>
+        <p><b>Siz:</b> Yangi bob tayyor</p>
+    </div>
+    <div class="chat-input">
+        <input placeholder="Xabar yozing...">
+        <button>➤</button>
+    </div>
+</div>
+
+</body>
+</html>
