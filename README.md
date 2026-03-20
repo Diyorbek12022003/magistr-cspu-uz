@@ -1,2 +1,2 @@
-# Untitled Project
+# Magistr.cspu.uz
 A [project](https://livecodes.io/?x=https://github.com/Diyorbek12022003/magistr-cspu-uz/tree/gh-pages/src) created by [Diyorbek12022003](https://github.com/Diyorbek12022003) on [LiveCodes](https://livecodes.io).
